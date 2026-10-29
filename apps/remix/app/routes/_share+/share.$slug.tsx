@@ -12,15 +12,15 @@ export function meta({ params: { slug } }: Route.MetaArgs) {
   }
 
   return [
-    { title: 'Documenso - Share' },
-    { description: 'I just signed a document in style with Documenso!' },
+    { title: 'Atty AI - Share' },
+    { description: 'A document was signed with Atty AI.' },
     {
       property: 'og:title',
-      content: 'Documenso - Join the open source signing revolution',
+      content: 'Atty AI Agreements',
     },
     {
       property: 'og:description',
-      content: 'I just signed with Documenso!',
+      content: 'A document was signed with Atty AI.',
     },
     {
       property: 'og:type',
@@ -32,7 +32,7 @@ export function meta({ params: { slug } }: Route.MetaArgs) {
     },
     {
       name: 'twitter:site',
-      content: '@documenso',
+      content: '@atty_ai',
     },
     {
       name: 'twitter:card',
@@ -44,7 +44,7 @@ export function meta({ params: { slug } }: Route.MetaArgs) {
     },
     {
       name: 'twitter:description',
-      content: 'I just signed with Documenso!',
+      content: 'A document was signed with Atty AI.',
     },
   ];
 }
@@ -69,8 +69,8 @@ export const loader = async ({ request, params: { slug } }: Route.LoaderArgs) =>
     return {};
   }
 
-  // Is hardcoded because this whole meta is hardcoded anyway for Documenso.
-  throw redirect('https://documenso.com');
+  // Atty AI fork: send people to the Atty AI site instead of documenso.com.
+  throw redirect('https://atty.ai');
 };
 
 export default function SharePage() {

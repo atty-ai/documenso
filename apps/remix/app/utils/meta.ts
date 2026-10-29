@@ -3,11 +3,11 @@ import { i18n, type MessageDescriptor } from '@lingui/core';
 
 export const appMetaTags = (title?: MessageDescriptor) => {
   const description =
-    'Join Documenso, the open signing infrastructure, and get a 10x better signing experience. Pricing starts at $30/mo. forever! Sign in now and enjoy a faster, smarter, and more beautiful document signing process. Integrates with your favorite tools, customizable, and expandable. Support our mission and become a part of our open-source community.';
+    'Atty AI agreements: review and sign your Atty AI documents securely online.';
 
   return [
     {
-      title: title ? `${i18n._(title)} - Documenso` : 'Documenso',
+      title: title ? `${i18n._(title)} - Atty AI` : 'Atty AI',
     },
     {
       name: 'description',
@@ -16,19 +16,19 @@ export const appMetaTags = (title?: MessageDescriptor) => {
     {
       name: 'keywords',
       content:
-        'Documenso, open source, DocuSign alternative, document signing, open signing infrastructure, open-source community, fast signing, beautiful signing, smart templates',
+        'Atty AI, agreements, electronic signature',
     },
     {
       name: 'author',
-      content: 'Documenso, Inc.',
+      content: 'Jonie.ai, LLC d/b/a Atty AI',
     },
     {
       name: 'robots',
-      content: 'index, follow',
+      content: 'noindex, nofollow',
     },
     {
       property: 'og:title',
-      content: 'Documenso - The Open Source DocuSign Alternative',
+      content: 'Atty AI Agreements',
     },
     {
       property: 'og:description',
@@ -48,7 +48,7 @@ export const appMetaTags = (title?: MessageDescriptor) => {
     },
     {
       name: 'twitter:site',
-      content: '@documenso',
+      content: '@atty_ai',
     },
     {
       name: 'twitter:description',
